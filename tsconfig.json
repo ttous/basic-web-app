@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/src/server/",
+        "target": "es5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true
+    },
+    "include": [
+        "src/server/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
