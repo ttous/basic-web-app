@@ -4,7 +4,7 @@
   "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
   "main": "src/server/index.ts",
   "scripts": {
-    "build": "concurrently \"tsc .\" \"webpack --mode production\"",
+    "build": "concurrently \"tsc\" \"webpack --mode production\"",
     "start": "npm run build && node src/server/index.ts",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot --display-error-details",
     "server": "tsc && nodemon dist/src/server/index.js",
