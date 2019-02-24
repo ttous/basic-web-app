@@ -1,6 +1,6 @@
 {
   "name": "basic-web-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Basic web app code to start a project using React.js, Sass, Node.js, Express, TSLint and Webpack.",
   "main": "src/server/server.ts",
   "scripts": {
