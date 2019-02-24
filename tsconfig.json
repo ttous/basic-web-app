@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/src/server/",
+        "outDir": "./dist/server/",
         "target": "es5",
         "noImplicitAny": true,
         "removeComments": true,

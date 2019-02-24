@@ -1,17 +1,17 @@
 {
-  "name": "simple-react-full-stack",
-  "version": "1.0.0",
-  "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
-  "main": "src/server/index.ts",
+  "name": "basic-web-app",
+  "version": "0.0.1",
+  "description": "Basic web app code to start a project using React.js, Sass, Node.js, Express, TSLint and Webpack.",
+  "main": "src/server/server.ts",
   "scripts": {
     "build": "concurrently \"tsc\" \"webpack --mode production\"",
-    "start": "npm run build && node src/server/index.ts",
+    "start": "npm run build && node src/server/server.ts",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot --display-error-details",
-    "server": "tsc && nodemon dist/src/server/index.js",
+    "server": "tsc && nodemon dist/server/server.js",
     "dev": "tslint -c tslint.json 'src/**/*.ts' && concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Sandeep Raveesh",
-  "license": "ISC",
+  "author": "Teddy Toussaint",
+  "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "express": "^4.16.3",
