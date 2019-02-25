@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "build": "concurrently \"tsc\" \"webpack --mode production\"",
-    "start": "yarn build && node src/server/server.ts",
+    "start": "yarn build && node dist/server/server.js",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot --display-error-details",
     "server": "tsc && nodemon dist/server/server.js",
     "dev": "tslint -c tslint.json 'src/**/*.ts' && concurrently \"yarn server\" \"yarn client\""
