@@ -4,7 +4,7 @@
   "description": "Basic web app code to start a project using React.js, Sass, Node.js, Express, TSLint and Webpack.",
   "main": "src/server/server.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "concurrently \"tsc\" \"webpack --mode production\"",
     "start": "yarn build && node src/server/server.ts",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot --display-error-details",
