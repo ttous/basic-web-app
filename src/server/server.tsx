@@ -15,8 +15,6 @@ router.get("/api", (req, res) => {
 });
 
 router.get("*", (req, res) => {
-    // res.sendFile(path.resolve(__dirname + "/../client/index.html"));
-
     const context = {} as any;
     const app = ReactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>

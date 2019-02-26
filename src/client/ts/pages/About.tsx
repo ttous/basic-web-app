@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
 
 export default class About extends React.Component<
   {},
