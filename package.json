@@ -2,6 +2,26 @@
   "name": "basic-web-app",
   "version": "0.0.2",
   "description": "Basic web app code to start a project using React.js, Sass, Node.js, Express, Jest, TSLint, React Router and Webpack.",
+  "license": "MIT",
+  "author": {
+    "name": "Teddy Toussaint",
+    "email": "teddy.toussaint@insalien.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttous/basic-web-app.git"
+  },
+  "homepage": "https://github.com/ttous/basic-web-app",
+  "keywords": [
+    "react",
+    "sass",
+    "nodejs",
+    "express",
+    "jest",
+    "tslint",
+    "react-router",
+    "webpack"
+  ],
   "main": "src/server/server.tsx",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
@@ -11,15 +31,6 @@
     "client": "webpack --mode development",
     "server": "tsc && node dist/server/server.js",
     "dev": "tslint -c tslint.json 'src/**/*.ts' && concurrently \"yarn server\" \"yarn client\""
-  },
-  "author": {
-    "name": "Teddy Toussaint",
-    "email": "teddy.toussaint@insalien.org"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ttous/basic-web-app.git"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
