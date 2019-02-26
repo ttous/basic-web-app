@@ -6,10 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Summary
 - [Unreleased](#[unreleased])
+- [0.0.3](#003---2019-02-26)
 - [0.0.2](#002---2019-02-24)
 - [0.0.1](#001---2019-02-24)
 
 ## [Unreleased]
+
+## [0.0.3] - 2019-02-26
 ### Added
 - [CHANGELOG](https://github.com/ttous/basic-web-app/blob/master/CHANGELOG.md).
 - [React Router](https://github.com/ReactTraining/react-router).
