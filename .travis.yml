@@ -1,14 +1,18 @@
 language: node_js
 
-node_js:
-  - 8
-  - node
-
 jobs:  
   include:
     - stage: "Tests"
+      node_js: 8
       script: yarn test
+    - node_js: node
+      script: yarn test
+
     - stage: "Build"
+      node_js: 8
       script: yarn build
+    - node_js: node
+      script: yarn build
+
     # - stage: "Deployment"
     #   script:
