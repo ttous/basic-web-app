@@ -1,8 +1,8 @@
 {
   "name": "basic-web-app",
   "version": "0.0.2",
-  "description": "Basic web app code to start a project using React.js, Sass, Node.js, Express, TSLint and Webpack.",
-  "main": "src/server/server.ts",
+  "description": "Basic web app code to start a project using React.js, Sass, Node.js, Express, Jest, TSLint, React Router and Webpack.",
+  "main": "src/server/server.tsx",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "build": "concurrently \"tsc\" \"webpack --mode production\"",
@@ -21,12 +21,14 @@
     "url": "https://github.com/ttous/basic-web-app.git"
   },
   "dependencies": {
+    "@types/react-router-dom": "^4.3.1",
     "babel-polyfill": "^6.26.0",
     "express": "^4.16.3",
     "moment": "^2.24.0",
     "pino": "^5.11.1",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
