@@ -7,4 +7,4 @@ Basic web app code to start a project using React.js, Sass, Node.js, Express, Je
 ### Special thanks
 
 - Thanks to [crsandeep](https://github.com/crsandeep) and his repository ([simple-react-full-stack](https://github.com/crsandeep/simple-react-full-stack)) on which this one is based on.
-- Thanks to [Alligator.io](https://alligator.io) and their article about React routing : [Using React Router 4 with Server-Side Rendering](https://alligator.io/react/react-router-ssr/)
+- Thanks to [Alligator.io](https://alligator.io) and their article about React routing : [Using React Router 4 with Server-Side Rendering](https://alligator.io/react/react-router-ssr/).
