@@ -17,7 +17,7 @@ router.get("/api", (req, res) => {
 router.get("*", (req, res) => {
     // res.sendFile(path.resolve(__dirname + "/../client/index.html"));
 
-    const context = {};
+    const context = {} as any;
     const app = ReactDOMServer.renderToString(
         <StaticRouter location={req.url} context={context}>
             <App />
@@ -29,6 +29,10 @@ router.get("*", (req, res) => {
         if (err) {
             logger.error("Could not read 'index.html':", err);
             return res.sendStatus(500);
+        }
+
+        if (context.status === 404) {
+          res.status(404);
         }
 
         return res.send(
