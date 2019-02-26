@@ -5,6 +5,7 @@
   "main": "src/server/server.tsx",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "dev_test": "jest --coverage",
     "build": "concurrently \"tsc\" \"webpack --mode production\"",
     "start": "yarn build && node dist/server/server.js",
     "client": "webpack --mode development",
