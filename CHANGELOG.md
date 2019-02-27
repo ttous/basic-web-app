@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [0.0.1](#001---2019-02-24)
 
 ## [Unreleased]
+### Added
+- [opn](https://github.com/sindresorhus/opn) for opening the app automatically on dev run.
 
 ## [0.0.4] - 2019-02-27
 ### Fixed
