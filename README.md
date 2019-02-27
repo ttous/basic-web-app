@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/basic-web-app.svg)](https://www.npmjs.org/package/basic-web-app) [![License](https://img.shields.io/npm/l/basic-web-app.svg)](https://www.npmjs.org/package/basic-web-app) [![Build Status](http://img.shields.io/travis/ttous/basic-web-app/master.svg)](https://travis-ci.org/ttous/basic-web-app) [![Dependencies Status](https://img.shields.io/david/ttous/basic-web-app.svg)](https://david-dm.org/ttous/basic-web-app) [![devDependencies Status](https://david-dm.org/ttous/basic-web-app/dev-status.svg)](https://david-dm.org/ttous/basic-web-app?type=dev) [![Known Vulnerabilities](https://snyk.io/test/github/ttous/basic-web-app/badge.svg)](https://snyk.io/test/github/ttous/basic-web-app) [![Coverage Status](https://coveralls.io/repos/github/ttous/basic-web-app/badge.svg)](https://coveralls.io/github/ttous/basic-web-app)
 
-Basic web app code to start a project using React.js, Sass, Node.js, Express, Jest, TSLint, React Router and Webpack.
+Basic isomorphic web app code to start a project using React.js, Sass, Node.js, Express, Jest, TSLint, React Router and Webpack.
 
 ### Special thanks
 

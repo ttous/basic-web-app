@@ -1,27 +1,31 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
-const outputDirectory = 'dist/client';
+const outputDirectory = 'dist';
 
-module.exports = {
-  entry: ['babel-polyfill', './src/client/ts/index.tsx'],
+const clientConfig = {
+  target: 'web',
+  entry: [
+    'babel-polyfill',
+    './src/client/ts/index.tsx',
+    './src/client/style/app.scss'
+  ],
   output: {
-    path: path.join(__dirname, outputDirectory),
+    path: path.join(__dirname, outputDirectory, 'client'),
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js", ".json"]
+  },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        loaders: "ts-loader",
-        options: {
-          compilerOptions: {
-            inlineSourceMap: true,
-            jsx: "react"
-          }
-        }
+        loaders: "ts-loader"
       },
       {
         test: /\.js$/,
@@ -38,18 +42,47 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js", ".json"]
-  },
-  // devServer: {
-  //   port: 3000,
-  //   open: true
-  // },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory]),
+    new CleanWebpackPlugin([outputDirectory + '/client']),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico'
     })
   ]
 };
+
+const serverConfig = {
+  target: 'node',
+  entry: [
+    './src/server/server.tsx',
+  ],
+  output: {
+    path: path.join(__dirname, outputDirectory, 'server'),
+    filename: 'server.js'
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js", ".json"]
+  },
+  externals: [nodeExternals()],
+  node: {
+    __dirname: false,
+    __filename: false,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loaders: "ts-loader"
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+      }
+    ]
+  },
+  plugins: [
+    new CleanWebpackPlugin([outputDirectory + '/server']),
+  ]
+}
+
+module.exports = [clientConfig, serverConfig];

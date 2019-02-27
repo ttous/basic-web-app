@@ -1,15 +1,14 @@
 import * as path from "path";
 import * as express from "express";
-import * as ReactDOMServer from 'react-dom/server';
 import * as React from 'react';
-import { StaticRouter } from 'react-router-dom';
+import * as ReactDOMServer from 'react-dom/server';
 import * as fs from 'fs';
+import { StaticRouter } from 'react-router-dom';
 import App from '../client/ts/App';
 import logger from "./log";
 
 const app = express();
 const router = express.Router();
-
 router.get("/api", (req, res) => {
     res.json(null);
 });
@@ -39,8 +38,6 @@ router.get("*", (req, res) => {
     });
 });
 
-// Use JSON for API requests
-app.use(express.json());
 // Store all HTML, JS and CSS files in client folder.
 app.use(express.static(path.resolve(__dirname + "/../client")));
 // Add the router

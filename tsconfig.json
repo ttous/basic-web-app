@@ -8,7 +8,7 @@
         "jsx": "react"
     },
     "include": [
-        "src/server/**/*"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules"
