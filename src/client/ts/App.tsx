@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch, NavLink, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
@@ -17,8 +17,9 @@ export default function App() {
             </ul>
 
             <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
+                <Redirect exact from="/" to="/home" />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/about" component={About} />
                 <Route component={NotFound} />
             </Switch>
         </div>
