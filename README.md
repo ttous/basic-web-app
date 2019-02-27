@@ -22,7 +22,7 @@ Now that you have your own copy of the code, you should customize it by editing 
 - `package.json`: You can change the `name`, `version`, `description`, `author`, `homepage`, `repository` and `bugs` properties.
 
 #### Yarn it
-After the app was installed in your Github repository, you can launch it as follow:
+After the app was put in your Github repository, you can install it locally as follow:
 ```bash
 git clone https://github.com/<your_username>/basic-web-app
 cd basic-web-app
@@ -54,7 +54,7 @@ yarn test     # or 'npm test'
 Happy coding!
 
 ## Features
-_basic-web-app_ implements a lot of features already put together for you to skip the ~~boring~~ configuration to go directly to the fun part!
+_basic-web-app_ implements a lot of features already put together for you to skip the ~~boring~~ configuration and go directly to the fun part!
 - [React.js](https://github.com/facebook/react) for the frontend.
 - [Sass](https://github.com/sass/node-sass) for the style.
 - [Node.js](https://github.com/nodejs/node) for the backend.
