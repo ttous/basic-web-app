@@ -54,7 +54,7 @@ yarn test     # or 'npm test'
 Happy coding!
 
 ## Features
-_basic-web-app_ implements a lot of features already put together for you to skip the ~~boring~~ configuration to go directly to the fun part!
+_basic-web-app_ implements a lot of features already put together for you to skip the ~~boring~~ configuration and go directly to the fun part!
 - [React.js](https://github.com/facebook/react) for the frontend.
 - [Sass](https://github.com/sass/node-sass) for the style.
 - [Node.js](https://github.com/nodejs/node) for the backend.
