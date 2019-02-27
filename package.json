@@ -21,6 +21,7 @@
     "tslint",
     "react-router",
     "webpack",
+    "typescript",
     "isomorphic"
   ],
   "main": "src/server/server.tsx",
