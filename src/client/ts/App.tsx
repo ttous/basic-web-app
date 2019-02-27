@@ -3,7 +3,6 @@ import { Route, Switch, NavLink } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
-import '../style/app.scss';
 
 export default function App() {
     return (
