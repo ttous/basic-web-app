@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Runtime error displaying `Error: UNKNOWN: unknown error, stat '\\..\client\index.html'`.
 ### Changed
-- [Webpack](https://github.com/webpack/webpack) bundle build for the server instead of [TypeScript](https://github.com/Microsoft/TypeScript) transpilation build for the server.
+- [Webpack](https://github.com/webpack/webpack) bundle build for the server instead of [TypeScript](https://github.com/Microsoft/TypeScript) transpilation build.
 
 ## [0.0.3] - 2019-02-26
 ### Added
