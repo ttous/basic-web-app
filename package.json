@@ -1,6 +1,6 @@
 {
   "name": "basic-web-app",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Basic isomorphic web app code to start a project using React.js, Sass, Node.js, Express, Jest, TSLint, React Router and Webpack.",
   "license": "MIT",
   "author": {
