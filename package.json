@@ -7,11 +7,14 @@
     "name": "Teddy Toussaint",
     "email": "teddy.toussaint@insalien.org"
   },
+  "homepage": "https://github.com/ttous/basic-web-app",
   "repository": {
     "type": "git",
     "url": "https://github.com/ttous/basic-web-app.git"
   },
-  "homepage": "https://github.com/ttous/basic-web-app",
+  "bugs": {
+    "url": "https://github.com/ttous/basic-web-app/issues"
+  },
   "keywords": [
     "react",
     "sass",
