@@ -20,6 +20,7 @@ You can also mirror it to another repository if you would like to keep being upd
 Now that you have your own copy of the code, you should customize it by editing the following files:
 - `README.md`: The edition depends on you.
 - `CHANGELOG.md`: It should be empty.
+- `.gitignore`: Remove the _ttous.md_ line.
 - `package.json`: You can change the `name`, `version`, `description`, `author`, `homepage`, `repository` and `bugs` properties.
 
 #### Yarn it
