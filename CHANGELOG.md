@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [0.0.1](#001---2019-02-24)
 
 ## [Unreleased]
+### Fixed
+- Installation process: first dev run bugging.
 ### Added
 - [nodemon](https://github.com/remy/nodemon) to automatically restart the server after a build.
 ### Removed
