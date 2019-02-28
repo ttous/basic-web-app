@@ -33,8 +33,8 @@
     "build": "webpack --mode production",
     "start": "yarn build && node dist/server/server.js",
     "dev_test": "jest --coverage",
-    "dev_build": "webpack --mode development",
-    "dev": "tslint -c tslint.json 'src/**/*.ts' && yarn dev_build && node dist/server/server.js"
+    "dev_build": "webpack --mode development --watch",
+    "dev": "tslint -c tslint.json 'src/**/*.ts' && concurrently \"yarn dev_build\" \"nodemon dist/server/server.js\""
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -69,7 +69,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.1.0",
     "node-sass": "^4.11.0",
-    "opn": "^5.4.0",
+    "nodemon": "^1.18.10",
     "pino-pretty": "^2.5.0",
     "react-test-renderer": "^16.8.3",
     "sass-loader": "^7.1.0",

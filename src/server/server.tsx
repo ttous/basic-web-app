@@ -7,8 +7,6 @@ import { StaticRouter } from 'react-router-dom';
 import App from '../client/ts/App';
 import logger from "./log";
 
-const opn = require('opn');
-
 const app = express();
 const router = express.Router();
 router.get("/api", (req, res) => {
@@ -46,6 +44,3 @@ app.use(express.static(path.resolve(__dirname + "/../client")));
 app.use("/", router);
 
 app.listen(process.env.PORT || 8080, () => logger.info(`Listening on port ${process.env.PORT || 8080}!`));
-
-// Open the app in the default browser if not in production mode
-if (process.env.NODE_ENV !== 'production') opn(`http://localhost:${process.env.PORT || 8080}`);
