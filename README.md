@@ -28,7 +28,7 @@ After the app was put in your Github repository, you can install it locally as f
 ```bash
 git clone https://github.com/<your_username>/basic-web-app
 cd basic-web-app
-yarn          # or 'npm i'
+yarn             # or 'npm i'
 ```
 
 #### That's it!
@@ -38,20 +38,21 @@ You can finally start developing! No further configuration is needed: _basic-web
 #### Development
 For development, you can run:
 ```bash
-yarn dev      # or 'npm run dev'
+yarn dev_build   # necessary only for the first run
+yarn dev         # or 'npm run dev'
 ```
 Your favorite browser should open right after the webpack bundling is done.
 
 #### Production
 For your production, simply run:
 ```bash
-yarn start    # or 'npm start'
+yarn start       # or 'npm start'
 ```
 
 #### Tests
 To launch the tests, run:
 ```bash
-yarn test     # or 'npm test'
+yarn test        # or 'npm test'
 ```
 Happy coding!
 
