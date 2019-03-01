@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Summary
 - [Unreleased](#unreleased)
+- [0.0.6](#006---2019-03-01)
 - [0.0.5](#005---2019-02-27)
 - [0.0.4](#004---2019-02-27)
 - [0.0.3](#003---2019-02-26)
@@ -13,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [0.0.1](#001---2019-02-24)
 
 ## [Unreleased]
+
+## [0.0.6] - 2019-03-01
 ### Fixed
 - [TSLint](https://github.com/palantir/tslint) not running everywhere.
 - Installation process: first dev run bugging.
