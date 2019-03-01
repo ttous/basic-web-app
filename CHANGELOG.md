@@ -14,11 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Fixed
+- [TSLint](https://github.com/palantir/tslint) not running everywhere.
 - Installation process: first dev run bugging.
 ### Added
+- Images handling.
 - [nodemon](https://github.com/remy/nodemon) to automatically restart the server after a build.
 ### Removed
 - [opn](https://github.com/sindresorhus/opn) for opening the app automatically on dev run.
+### Changed
+- Replace [url-loader](https://github.com/webpack-contrib/url-loader) by [file-loader](https://github.com/webpack-contrib/file-loader).
 
 ## [0.0.5] - 2019-02-27
 ### Added

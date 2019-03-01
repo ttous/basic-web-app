@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 export default function NotFound({ staticContext = {} as any }) {
     staticContext.status = 404;

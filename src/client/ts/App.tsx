@@ -1,8 +1,13 @@
-import * as React from 'react';
-import { Route, Switch, NavLink, Redirect } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
+import * as React from "react";
+import {
+    NavLink,
+    Redirect,
+    Route,
+    Switch
+} from "react-router-dom";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
     return (

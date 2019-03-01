@@ -1,13 +1,13 @@
-import * as path from "path";
 import * as express from "express";
-import * as React from 'react';
-import * as ReactDOMServer from 'react-dom/server';
-import * as fs from 'fs';
-import { StaticRouter } from 'react-router-dom';
-import App from '../client/ts/App';
+import * as fs from "fs";
+import * as path from "path";
+import * as React from "react";
+import * as ReactDOMServer from "react-dom/server";
+import { StaticRouter } from "react-router-dom";
+import App from "../client/ts/App";
 import logger from "./log";
 
-const app = express();
+const server = express();
 const router = express.Router();
 router.get("/api", (req, res) => {
     res.json(null);
@@ -24,7 +24,7 @@ router.get("*", (req, res) => {
     const indexFile = path.resolve(__dirname + "/../client/index.html");
     fs.readFile(indexFile, "utf8", (err, data) => {
         if (err) {
-            logger.error("Could not read 'index.html':", err);
+            logger.error("Could not read \"index.html\":", err);
             return res.sendStatus(500);
         }
 
@@ -39,8 +39,8 @@ router.get("*", (req, res) => {
 });
 
 // Store all HTML, JS and CSS files in client folder
-app.use(express.static(path.resolve(__dirname + "/../client")));
+server.use(express.static(path.resolve(__dirname + "/../client")));
 // Add the router
-app.use("/", router);
+server.use("/", router);
 
-app.listen(process.env.PORT || 8080, () => logger.info(`Listening on port ${process.env.PORT || 8080}!`));
+server.listen(process.env.PORT || 8080, () => logger.info(`Listening on port ${process.env.PORT || 8080}!`));

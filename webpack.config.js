@@ -1,6 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 
 const outputDirectory = 'dist';
@@ -37,8 +38,8 @@ const clientConfig = {
         loaders: ["style-loader", "css-loader", "sass-loader"]
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000'
+        test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
+        loader: 'file-loader'
       }
     ]
   },
@@ -77,6 +78,10 @@ const serverConfig = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+      },
+      {
+        test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
+        loader: 'file-loader'
       }
     ]
   },

@@ -1,15 +1,15 @@
-import * as React from 'react';
+import * as React from "react";
 
 export default class About extends React.Component<
   {},
   {}
   > {
-  constructor(props: About['props']) {
+  constructor(props: About["props"]) {
     super(props);
     this.state = {};
   }
 
-  render() {
+  public render() {
     return (
       <div>
         <h1>{`About us :-)`}</h1>
