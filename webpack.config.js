@@ -1,26 +1,26 @@
-const path = require('path');
+const path = require("path");
 
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const nodeExternals = require('webpack-node-externals');
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const nodeExternals = require("webpack-node-externals");
 
-const outputDirectory = 'dist';
+const outputDirectory = "dist";
 
 const clientConfig = {
-  target: 'web',
+  target: "web",
   entry: [
-    'babel-polyfill',
-    './src/client/ts/index.tsx',
-    './src/client/style/app.scss'
+    "babel-polyfill",
+    "./src/client/ts/index.tsx",
+    "./src/client/style/app.scss"
   ],
   output: {
-    path: path.join(__dirname, outputDirectory, 'client'),
-    filename: 'bundle.js'
+    path: path.join(__dirname, outputDirectory, "client"),
+    filename: "bundle.js"
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"]
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -31,7 +31,7 @@ const clientConfig = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
       },
       {
         test: /\.scss$/,
@@ -39,27 +39,27 @@ const clientConfig = {
       },
       {
         test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
-        loader: 'file-loader'
+        loader: "file-loader"
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory + '/client']),
+    new CleanWebpackPlugin([outputDirectory + "/client"]),
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      favicon: './public/favicon.ico'
+      template: "./public/index.html",
+      favicon: "./public/favicon.ico"
     })
   ]
 };
 
 const serverConfig = {
-  target: 'node',
+  target: "node",
   entry: [
-    './src/server/server.tsx',
+    "./src/server/server.tsx",
   ],
   output: {
-    path: path.join(__dirname, outputDirectory, 'server'),
-    filename: 'server.js'
+    path: path.join(__dirname, outputDirectory, "server"),
+    filename: "server.js"
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"]
@@ -77,16 +77,16 @@ const serverConfig = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
       },
       {
         test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
-        loader: 'file-loader'
+        loader: "file-loader"
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory + '/server']),
+    new CleanWebpackPlugin([outputDirectory + "/server"]),
   ]
 }
 
