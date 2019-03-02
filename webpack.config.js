@@ -10,8 +10,8 @@ const clientConfig = {
   target: "web",
   entry: [
     "babel-polyfill",
-    "./src/client/ts/index.tsx",
-    "./src/client/style/app.scss"
+    "./src/client/scripts/index.tsx",
+    "./src/client/styles/app.scss"
   ],
   output: {
     path: path.join(__dirname, outputDirectory, "client"),

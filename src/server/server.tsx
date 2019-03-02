@@ -4,7 +4,7 @@ import * as path from "path";
 import * as React from "react";
 import * as ReactDOMServer from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
-import App from "../client/ts/App";
+import App from "../client/scripts/App";
 import logger from "./log";
 
 const server = express();
