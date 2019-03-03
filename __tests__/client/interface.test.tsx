@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
-import Home from '../../src/client/ts/pages/Home';
-import About from '../../src/client/ts/pages/About';
-import NotFound from '../../src/client/ts/pages/NotFound';
+import Home from '../../src/client/scripts/pages/Home';
+import About from '../../src/client/scripts/pages/About';
+import NotFound from '../../src/client/scripts/pages/NotFound';
 
 test('Home', () => {
     const tree = renderer
