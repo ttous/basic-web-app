@@ -13,6 +13,9 @@ exports[`Home 1`] = `
   <h1>
     Welcome!
   </h1>
+  <div
+    id="sample-image"
+  />
 </div>
 `;
 
