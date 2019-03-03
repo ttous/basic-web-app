@@ -33,8 +33,8 @@
     "build": "webpack --mode production",
     "start": "yarn build && node dist/server/server.js",
     "dev_test": "jest --coverage",
-    "dev_build": "webpack --mode development --watch",
-    "dev": "tslint --project . && concurrently \"yarn dev_build\" \"nodemon dist/server/server.js\""
+    "dev_build": "webpack --mode development",
+    "dev": "tslint --project . && concurrently \"yarn dev_build -- --watch\" \"nodemon dist/server/server.js\""
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
