@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [0.0.1](#001---2019-02-24)
 
 ## [Unreleased]
+### Added
+- FAQ in the [README](https://github.com/ttous/basic-web-app/blob/master/README.md).
 
 ## [0.0.6] - 2019-03-01
 ### Fixed

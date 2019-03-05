@@ -8,6 +8,7 @@ _basic-web-app_ is a ~~basic~~ isomorphic web app code to start a project using 
 - [Installation](#installation)
 - [Quick start](#quick-start)
 - [Features](#features)
+- [FAQ](#faq)
 - [Contributing](#contributing)
 - [Special thanks](#special-thanks)
 
@@ -36,24 +37,28 @@ You can finally start developing! No further configuration is needed: _basic-web
 
 ## Quick start
 #### Development
-For development, you can run:
+##### Test
 ```bash
-yarn dev_build   # necessary only for the first run
+yarn dev_test    # or 'npm test'
+```
+##### Start
+```bash
+yarn dev_build   # or 'npm dev_build' (necessary only for the first run)
 yarn dev         # or 'npm run dev'
 ```
-Your favorite browser should open right after the webpack bundling is done.
 
 #### Production
+##### Test
+To launch the tests, run:
+```bash
+yarn test        # or 'npm test'
+```
+##### Start
 For your production, simply run:
 ```bash
 yarn start       # or 'npm start'
 ```
 
-#### Tests
-To launch the tests, run:
-```bash
-yarn test        # or 'npm test'
-```
 Happy coding!
 
 ## Features
@@ -66,6 +71,21 @@ _basic-web-app_ implements a lot of features already put together for you to ski
 - [React Router](https://github.com/ReactTraining/react-router) for the routing.
 - [Jest](https://github.com/facebook/jest) for the tests.
 - [Webpack](https://github.com/webpack/webpack) for the unity.
+
+## FAQ
+### How can I use client-side global variables `window` and `document`?
+In order to use client-only variables, you must check whether they are defined before using them. In order to do so, you can use the following technique:
+```typescript
+// At the beginning of your file
+const globalAsAny = (global as any);
+
+// ...
+
+// When you need to use the global variables
+if (globalAsAny.window) { // or 'if (globalAsAny.document)'
+    // ...
+}
+```
 
 ## Contributing
 Contributions are very welcome! Please check out the [Code of Conduct](https://github.com/ttous/basic-web-app/blob/master/CODE_OF_CONDUCT.md) before making your pull requests.

@@ -2,27 +2,101 @@
 
 exports[`About 1`] = `
 <div>
-  <h1>
-    About us :-)
-  </h1>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/about"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        About
+      </a>
+    </li>
+  </ul>
+  <div>
+    <h1>
+      About us :-)
+    </h1>
+  </div>
 </div>
 `;
 
 exports[`Home 1`] = `
 <div>
-  <h1>
-    Welcome!
-  </h1>
-  <div
-    id="sample-image"
-  />
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+  </ul>
+  <div>
+    <h1>
+      Welcome!
+    </h1>
+    <div
+      id="sample-image"
+    />
+  </div>
 </div>
 `;
 
 exports[`NotFound 1`] = `
 <div>
-  <h1>
-    ERROR 404 :-(
-  </h1>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+  </ul>
+  <div>
+    <h1>
+      ERROR 404 :-(
+    </h1>
+  </div>
 </div>
 `;
