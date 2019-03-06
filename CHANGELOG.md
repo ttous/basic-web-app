@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - FAQ in the [README](https://github.com/ttous/basic-web-app/blob/master/README.md).
+### Changed
+- Replace [file-loader](https://github.com/webpack-contrib/file-loader) by [url-loader](https://github.com/webpack-contrib/url-loader).
 
 ## [0.0.6] - 2019-03-01
 ### Fixed

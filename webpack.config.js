@@ -31,7 +31,7 @@ const clientConfig = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: "babel-loader"
       },
       {
         test: /\.scss$/,
@@ -39,7 +39,7 @@ const clientConfig = {
       },
       {
         test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
-        loader: "file-loader"
+        loader: "url-loader?limit=100000"
       }
     ]
   },
