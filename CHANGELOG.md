@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Summary
-- [Unreleased](#unreleased)
+- [0.0.7 (unreleased)](#007---unreleased)
 - [0.0.6](#006---2019-03-01)
 - [0.0.5](#005---2019-02-27)
 - [0.0.4](#004---2019-02-27)
@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [0.0.2](#002---2019-02-24)
 - [0.0.1](#001---2019-02-24)
 
-## [Unreleased]
+## [0.0.7] - (unreleased)
 ### Added
 - FAQ in the [README](https://github.com/ttous/basic-web-app/blob/master/README.md).
 ### Changed
