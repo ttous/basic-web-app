@@ -41,8 +41,8 @@
     "express": "^4.16.3",
     "moment": "^2.24.0",
     "pino": "^5.11.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
@@ -55,7 +55,7 @@
     "@types/jest": "^24.0.6",
     "@types/opn": "^5.1.0",
     "@types/pino": "^5.8.5",
-    "@types/react": "^16.8.4",
+    "@types/react": "^16.8.6",
     "@types/react-dom": "^16.8.2",
     "@types/react-router-dom": "^4.3.1",
     "@types/react-test-renderer": "^16.8.1",
@@ -70,14 +70,14 @@
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.10",
     "pino-pretty": "^2.5.0",
-    "react-test-renderer": "^16.8.3",
+    "react-test-renderer": "^16.8.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "ts-loader": "^5.3.3",
-    "tslint": "^5.13.0",
+    "tslint": "^5.13.1",
     "typescript": "^3.3.3333",
     "url-loader": "^1.1.2",
-    "webpack": "^4.5.0",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.0.8",
     "webpack-node-externals": "^1.7.2"
   }
