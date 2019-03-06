@@ -44,7 +44,7 @@ const clientConfig = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory + "/client"]),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       favicon: "./public/favicon.ico"
@@ -81,12 +81,12 @@ const serverConfig = {
       },
       {
         test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
-        loader: "file-loader"
+        loader: "url-loader?limit=100000"
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory + "/server"]),
+    new CleanWebpackPlugin(),
   ]
 }
 
