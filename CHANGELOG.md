@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Update [clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin) to version 2.0.0.
 - Replace [file-loader](https://github.com/webpack-contrib/file-loader) by [url-loader](https://github.com/webpack-contrib/url-loader).
+### Removed
+- [opn](https://github.com/sindresorhus/opn) types definitions package.
 
 ## [0.0.6] - 2019-03-01
 ### Fixed
