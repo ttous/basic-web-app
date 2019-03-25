@@ -5,7 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Summary
-- [0.0.7 (unreleased)](#007---unreleased)
+- [0.0.8 (unreleased)](#008---unreleased)
+- [0.0.7](#007---2019-03-25)
 - [0.0.6](#006---2019-03-01)
 - [0.0.5](#005---2019-02-27)
 - [0.0.4](#004---2019-02-27)
@@ -13,11 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [0.0.2](#002---2019-02-24)
 - [0.0.1](#001---2019-02-24)
 
-## [0.0.7] - (unreleased)
+## [0.0.8] - (unreleased)
+
+## [0.0.7] - 2019-03-25
 ### Added
 - FAQ in the [README](https://github.com/ttous/basic-web-app/blob/master/README.md).
 ### Changed
 - Update [clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin) to version 2.0.0.
+- Update [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom) to version 5.0.0.
 - Replace [file-loader](https://github.com/webpack-contrib/file-loader) by [url-loader](https://github.com/webpack-contrib/url-loader).
 ### Removed
 - [opn](https://github.com/sindresorhus/opn) types definitions package.
