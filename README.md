@@ -43,7 +43,7 @@ yarn dev_test    # or 'npm test'
 ```
 ##### Start
 ```bash
-yarn dev_build   # or 'npm dev_build' (necessary only for the first run)
+yarn dev_build   # or 'npm run dev_build' (necessary only for the first run)
 yarn dev         # or 'npm run dev'
 ```
 
