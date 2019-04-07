@@ -39,7 +39,7 @@ You can finally start developing! No further configuration is needed: _basic-web
 #### Development
 ##### Test
 ```bash
-yarn dev_test    # or 'npm test'
+yarn dev_test    # or 'npm run dev_test'
 ```
 ##### Start
 ```bash
