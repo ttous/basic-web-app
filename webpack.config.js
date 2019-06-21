@@ -1,6 +1,6 @@
 const path = require("path");
 
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const nodeExternals = require("webpack-node-externals");
 
@@ -39,7 +39,10 @@ const clientConfig = {
       },
       {
         test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
-        loader: "url-loader?limit=100000"
+        loader: "url-loader",
+        options: {
+          limit: 100000
+        }
       }
     ]
   },
@@ -81,7 +84,10 @@ const serverConfig = {
       },
       {
         test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
-        loader: "url-loader?limit=100000"
+        loader: "url-loader",
+        options: {
+          limit: 100000
+        }
       }
     ]
   },

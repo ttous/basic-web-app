@@ -5,7 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Summary
-- [0.0.8 (unreleased)](#008---unreleased)
+- [1.0.0 (unreleased)](#100---unreleased)
+- [0.0.8](#008---2019-06-21)
 - [0.0.7](#007---2019-03-25)
 - [0.0.6](#006---2019-03-01)
 - [0.0.5](#005---2019-02-27)
@@ -14,7 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [0.0.2](#002---2019-02-24)
 - [0.0.1](#001---2019-02-24)
 
-## [0.0.8] - (unreleased)
+## [0.0.8] - (2019-06-21)
+### Fixed
+- Build command for development using `npm`: replace `npm dev_build` by `npm run dev_build`.
+### Changed
+- Update all packages.
 
 ## [0.0.7] - 2019-03-25
 ### Added
