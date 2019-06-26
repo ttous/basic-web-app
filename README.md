@@ -91,6 +91,6 @@ if (globalAsAny.window) { // or 'if (globalAsAny.document)'
 Contributions are very welcome! Please check out the [Code of Conduct](https://github.com/ttous/basic-web-app/blob/master/CODE_OF_CONDUCT.md) before making your pull requests.
 
 ## Special thanks
-- Thanks to [crsandeep](https://github.com/crsandeep) and his repository ([simple-react-full-stack](https://github.com/crsandeep/simple-react-full-stack)) on which this one is based on.
+- Thanks to [crsandeep](https://github.com/crsandeep) and his repository ([simple-react-full-stack](https://github.com/crsandeep/simple-react-full-stack)) which this one is based on.
 - Thanks to [Alligator.io](https://alligator.io) and their article about React routing: [Using React Router 4 with Server-Side Rendering](https://alligator.io/react/react-router-ssr/).
 - Thanks to [Soon Hin Khor](https://medium.com/@khor) and his article about full-stack [Webpack](https://github.com/webpack/webpack) configuration: [Webpack Javascript Bundling for Both Front-end and Back-end (nodejs)](https://medium.com/code-oil/webpack-javascript-bundling-for-both-front-end-and-back-end-b95f1b429810).
